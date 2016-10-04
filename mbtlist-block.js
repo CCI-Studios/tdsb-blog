@@ -58,11 +58,11 @@
 
 		if(ListCategoryImg.indexOf('Learning Communities') > -1)
 	    {
-			ListImage = "'https://4.bp.blogspot.com/-RAl-muiUxNA/V_Pp-Xs8bdI/AAAAAAAAA0c/iJ9xP9oqwn4J_D0Bwaev7-k70ZseS_kXgCPcB/s1600/Learning%2BCommunities4.jpg'"; 
+			ListImage = "'https://4.bp.blogspot.com/-CCuBUs210VI/V_QMJMmpUTI/AAAAAAAAA2I/8o7fWemabWAV2vSgsM5F1YALe5nloJkpQCLcB/s1600/Learning-copy.jpg'"; 
 	    }
 	    else if(ListCategoryImg.indexOf('RWG') > -1)
 	    {
-			ListImage = "'https://1.bp.blogspot.com/-XVTsM05xYSI/V_PqT7dUpuI/AAAAAAAAA0g/fCxhycFVJ-YNXct8QVahGCmDR1BPzabhwCLcB/s1600/RWG.JPG'"; 
+			ListImage = "'https://1.bp.blogspot.com/-hNzvYmXeOjo/V_QKTy9bRCI/AAAAAAAAA10/D2TKWdfCwugku0UOhKoXOf0bnyI7wAD9QCLcB/s1600/RWG-copy.jpg'"; 
 	    }
 	    else if(ListCategoryImg.indexOf('IWBs') > -1)
 	    {
@@ -74,7 +74,7 @@
 	    }
 	    else if(ListCategoryImg.indexOf('Special Projects') > -1)
 	    {
-			ListImage = "'https://2.bp.blogspot.com/-nl8CczQxP1M/V_Pqfy7ZWMI/AAAAAAAAA0s/1sE5QVvzndcI_i5S5T8jK3gQWYdwQOtIACLcB/s1600/Special%2BProjects.png'"; 
+			ListImage = "'https://2.bp.blogspot.com/-dFWNIf13mrk/V_QIu6cPBpI/AAAAAAAAA1o/SxY-lSCu2eoAUNobkdqxtjDGe22sAnVZgCLcB/s1600/Special%2BProjects%2Bcopy.png'"; 
 	    }
 	    else if(ListCategoryImg.indexOf('EQAO') > -1)
 	    {
