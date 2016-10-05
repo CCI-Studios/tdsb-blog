@@ -64,6 +64,93 @@ $(&#39;#IWBs&#39;).insertAfter(&#39;#RWG&#39;);
 $(&#39;#Math-Initiatives&#39;).insertAfter(&#39;#IWBs&#39;);
 $(&#39;#Special-Projects&#39;).insertAfter(&#39;#Math-Initiatives&#39;);
 $(&#39;#EQAO&#39;).insertAfter(&#39;#Special-Projects&#39;);
+
+
+  var post_image = "https://2.bp.blogspot.com/-YDy-_XgfwwA/V4T89MNQOJI/AAAAAAAADts/8GEMncy5IYkd48GDsYZPIQLgNy75ISlvwCLcB/s1000/stock-photo-80266775-abstract-blur-background-english-multiple-choice-tes.jpg";
+
+  var posttag = $('.inner-title .labels').text();
+  if(posttag.indexOf('Learning Communities') > -1)
+  {
+    post_image = "'https://4.bp.blogspot.com/-RAl-muiUxNA/V_Pp-Xs8bdI/AAAAAAAAA0c/iJ9xP9oqwn4J_D0Bwaev7-k70ZseS_kXgCPcB/s1600/Learning%2BCommunities4.jpg'"; 
+    $('#inner-banner').css({'background':'url('+post_image+') center ', 'background-size':'cover'});
+  }
+  else if(posttag.indexOf('RWG') > -1)
+  {
+    post_image = "'https://1.bp.blogspot.com/-XVTsM05xYSI/V_PqT7dUpuI/AAAAAAAAA0g/fCxhycFVJ-YNXct8QVahGCmDR1BPzabhwCLcB/s1600/RWG.JPG'"; 
+    $('#inner-banner').css({'background':'url('+post_image+') center ', 'background-size':'cover'});
+  }
+  else if(posttag.indexOf('IWBs') > -1)
+  {
+    post_image = "'https://1.bp.blogspot.com/-sWHA7X0oHyo/V_PqYdz5W0I/AAAAAAAAA0k/zr6zoVAV7Z8I59mXyFgnqRV8Y7FK7Z4jQCLcB/s1600/IWB2.png'"; 
+    $('#inner-banner').css({'background':'url('+post_image+') center ', 'background-size':'cover'});
+  }
+  else if(posttag.indexOf("Math Initiatives") > -1)
+  { 
+   post_image = "'https://4.bp.blogspot.com/-BzSRbwBRb78/V_PqbC_ZaOI/AAAAAAAAA0o/J-jo6p7Ap8olvuovupQnOQu9EZ5YrictQCLcB/s1600/Math.png'"; 
+    $('#inner-banner').css({'background':'url('+post_image+') center ', 'background-size':'cover'});
+  }
+  else if(posttag.indexOf('Special Projects') > -1)
+  {
+    post_image = "'https://2.bp.blogspot.com/-nl8CczQxP1M/V_Pqfy7ZWMI/AAAAAAAAA0s/1sE5QVvzndcI_i5S5T8jK3gQWYdwQOtIACLcB/s1600/Special%2BProjects.png'";
+    $('#inner-banner').css({'background':'url('+post_image+') center ', 'background-size':'cover'}); 
+  }
+  else if(posttag.indexOf('EQAO') > -1)
+  {
+    post_image = "'https://1.bp.blogspot.com/-fBF7DOmfF5o/V_Pqj19w_iI/AAAAAAAAA0w/uF-z49wktdo5IF4jM1Q7WfrNE14uwsXoQCLcB/s1600/DSC00052.JPG'"; 
+    $('#inner-banner').css({'background':'url('+post_image+') center ', 'background-size':'cover'});
+  }
+  
+
+     
+
+  $('.post-outer').each(function(index){
+
+    var labeltag = $(this).find('.post-labels a').text();
+    var thumbImage = $(this).find('.post-body #mbtlist-content .image img').attr('src');
+  if(thumbImage == '')
+  { 
+    if(labeltag.indexOf('Learning Communities') > -1)
+    {
+      thumb_image = "https://4.bp.blogspot.com/-CCuBUs210VI/V_QMJMmpUTI/AAAAAAAAA2I/8o7fWemabWAV2vSgsM5F1YALe5nloJkpQCLcB/s1600/Learning-copy.jpg"; 
+      $(this).find('.post-body #mbtlist-content .image img').attr('src',thumb_image);
+    }
+    else if(labeltag.indexOf('RWG') > -1)
+    {
+      thumb_image = "https://1.bp.blogspot.com/-hNzvYmXeOjo/V_QKTy9bRCI/AAAAAAAAA10/D2TKWdfCwugku0UOhKoXOf0bnyI7wAD9QCLcB/s1600/RWG-copy.jpg"; 
+      $(this).find('.post-body #mbtlist-content .image img').attr('src',thumb_image);
+    }
+    else if(labeltag.indexOf('IWBs') > -1)
+    {
+      thumb_image = "https://1.bp.blogspot.com/-sWHA7X0oHyo/V_PqYdz5W0I/AAAAAAAAA0k/zr6zoVAV7Z8I59mXyFgnqRV8Y7FK7Z4jQCLcB/s1600/IWB2.png"; 
+      $(this).find('.post-body #mbtlist-content .image img').attr('src',thumb_image);
+    }
+    else if(labeltag.indexOf("Math Initiatives") > -1)
+    { 
+     thumb_image = "https://4.bp.blogspot.com/-kFtiaQcjlPo/V_PydlbltsI/AAAAAAAAA1M/C69xYzxQ9XwiQ8d8aGWF3teTumsgX-ZkACLcB/s1600/Math%2Bcopy.png"; 
+     $(this).find('.post-body #mbtlist-content .image img').attr('src',thumb_image);
+    }
+    else if(labeltag.indexOf('Special Projects') > -1)
+    {
+      thumb_image = "https://2.bp.blogspot.com/-dFWNIf13mrk/V_QIu6cPBpI/AAAAAAAAA1o/SxY-lSCu2eoAUNobkdqxtjDGe22sAnVZgCLcB/s1600/Special%2BProjects%2Bcopy.png";
+      $(this).find('.post-body #mbtlist-content .image img').attr('src',thumb_image); 
+    }
+    else if(labeltag.indexOf('EQAO') > -1)
+    {
+      thumb_image = "https://1.bp.blogspot.com/-fBF7DOmfF5o/V_Pqj19w_iI/AAAAAAAAA0w/uF-z49wktdo5IF4jM1Q7WfrNE14uwsXoQCLcB/s1600/DSC00052.JPG"; 
+      $(this).find('.post-body #mbtlist-content .image img').attr('src',thumb_image);
+    }
+    else
+    { 
+      thumb_Image = "https://4.bp.blogspot.com/-CCuBUs210VI/V_QMJMmpUTI/AAAAAAAAA2I/8o7fWemabWAV2vSgsM5F1YALe5nloJkpQCLcB/s1600/Learning-copy.jpg";
+
+      $('.post-body #mbtlist-content .image img').attr('src',thumb_image);
+    }
+
+    
+  }
+
+  });
+ 
       
 });
 
@@ -2505,12 +2592,25 @@ head.appendChild(script);
                 <b:include name='inner-banner-content'/>
             </div>
             </b:if>
-
-            <b:else/>
+             <b:if cond='data:blog.searchQuery'>
              <div id='inner-banner'>
+                <b:include name='search-banner-content'/>
+            </div>
+             </b:if>
+             <b:else/>
+               <div id='inner-banner'>
                 <b:include name='inner-banner-content'/>
             </div>
+             
             </b:if>
+            
+          </b:if>
+          <b:if cond='data:blog.url != data:blog.homepageUrl'>
+             <b:if cond='data:blog.pageType != &quot;item&quot; and !data:blog.searchLabel and data:blog.pageType != &quot;archive&quot; and !data:blog.searchQuery and data:blog.pageType != "error_page"' >
+               <div  id='inner-banner'>
+                <b:include name='inner-banner-content'/>
+            </div>
+             </b:if>
           </b:if>
 
             </b:includable>
@@ -2753,12 +2853,18 @@ head.appendChild(script);
               <b:loop values='data:posts' var='post'>
              <b:if cond='data:blog.pageType != &quot;index&quot;'>
                  <b:loop values='data:post.labels' var='label'>
-            <a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='not data:label.isLast'>,</b:if>
+            <a expr:href='data:label.url' rel='tag' class="labels"><data:label.name/></a><b:if cond='not data:label.isLast'>,</b:if>
           </b:loop>
          
           </b:if>
               </b:loop>
                 <h1><data:blog.pageName/></h1></div>
+               
+                </b:includable>
+                 <b:includable id='search-banner-content'>
+                <div class='inner-title'>
+              
+                <h1>Search</h1></div>
                
                 </b:includable>
           <b:includable id='mobile-index-post' var='post'>
