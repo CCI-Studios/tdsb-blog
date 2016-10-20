@@ -31,9 +31,9 @@ for (var i = 0; i < json.feed.entry.length; i++)
 
 
 for (var j = 0; j < json.feed.entry[i].link.length; j++) { 
-if (json.feed.entry[i].link[j].rel == 'alternate') { 
-break; 
-} 
+	if (json.feed.entry[i].link[j].rel == 'alternate') { 
+		break; 
+	} 
 } 
 
 var ListCategory = [];
@@ -97,12 +97,16 @@ else
 
 //----------------------------------- Printing List
 for(k=0;k<json.feed.category.length;k++)
-{
+{	
+	console.log(json.feed.entry[i].category.length);
 	for(l=0; l<json.feed.entry[i].category.length; l++)
-	{
+	{	
+		
 		if(json.feed.entry[i].category[l].term==json.feed.category[k].term)
 		{	
 			var myStr1 = json.feed.category[k].term;
+			console.log(myStr1);
+			console.log(ListTitle);
 			myStr1 = myStr1.replace(/\s+/g, "-");
 			var theResults = "<div class='rows'><div class='image'><img src=" 
 			+ListImage+ 
@@ -116,7 +120,7 @@ for(k=0;k<json.feed.category.length;k++)
 			"<a href='http://www.twitter.com/share?url="+ListUrl1+"'><img src='https://3.bp.blogspot.com/-aRrDIEtw4LQ/V4PCVvz1U9I/AAAAAAAAGi0/JQcUWC03CwgZTy4CFh9pAeBhXRUYcBGVACLcB/s1600/twitter-green.png'></a>"+
 			"<a href='http://assistivetechtdsb-dev.blogspot.com/feeds/posts/default'><img src='https://3.bp.blogspot.com/-Dw-0louT5DA/V7okFrPbauI/AAAAAAAAAxc/PU_TPDnci_MKD48X4q-aNpCod9d99W6AACLcB/s1600/rss.png'/></a></div><div>";
            $('#'+myStr1).append(theResults);
-           console.log($('#'+myStr1));
+          // console.log($('#'+myStr1));
 		}
 	}
 }

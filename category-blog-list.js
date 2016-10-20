@@ -118,13 +118,13 @@ var theResults = "<div class='rows'><div class='image'><img src="
 
 $('.category').append(theResults);
 
-} 
+} 	
 
 }
 </script> 
 <!-- ######### Invoking the Callback Function ############# --> 
 <script> 
-ListBlogLink = "https://assistivetechtdsb-dev.blogspot.ca/"; 
+ListBlogLink = "https://assistivetechtdsb.blogspot.ca/"; 
 
 ListCount = 8; 
 TitleCount = 70; 
